@@ -1,5 +1,22 @@
 # Media Stack - Setup
 
+Stack completa para gerenciamento e streaming de midia pessoal (filmes, series, anime).
+
+## O que cada servico faz
+
+| Servico | Descricao |
+|---------|-----------|
+| **Jellyfin** | Media server - organiza e faz streaming da sua biblioteca de filmes/series para qualquer dispositivo (tipo Netflix pessoal) |
+| **Radarr** | Gerenciador de filmes - monitora lancamentos, busca automaticamente e organiza sua colecao |
+| **Sonarr** | Gerenciador de series - igual ao Radarr, mas para series de TV e anime |
+| **Prowlarr** | Gerenciador de indexers - centraliza as fontes de busca e sincroniza com Radarr/Sonarr |
+| **qBittorrent** | Cliente torrent - faz os downloads solicitados pelo Radarr/Sonarr |
+| **Jellyseerr** | Interface de requests - permite solicitar filmes/series de forma amigavel (usuarios pedem, sistema baixa) |
+| **Bazarr** | Gerenciador de legendas - busca e baixa legendas automaticamente para toda sua biblioteca |
+| **Recyclarr** | Sincroniza perfis de qualidade do TRaSH Guides - configura automaticamente os melhores padroes de qualidade (4K HDR, audio, etc) |
+| **ListSync** | Sincroniza watchlists externas (Letterboxd, IMDB, AniList, Trakt) com o Jellyseerr - adicione um filme na sua watchlist e ele baixa automaticamente |
+| **Recommendarr** | Recomendacoes com IA - sugere filmes/series baseado na sua biblioteca |
+
 ## Pre-requisitos
 
 - Docker e Docker Compose instalados
